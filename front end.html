@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ASL Recognition App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <h1>ASL Recognition</h1>
+      <p>Real-time hand gesture detection for American Sign Language (A-Z)</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- Video Feed Section -->
+      <section class="video-feed">
+        <div class="video-container">
+          <video id="camera-feed" autoplay muted></video>
+          <div class="overlay"></div>
+        </div>
+        <div class="detected-letter">
+          <span id="letter">A</span>
+        </div>
+      </section>
+
+      <!-- Controls -->
+      <section class="controls">
+        <button id="start-stop-btn" class="btn">Start Recognition</button>
+      </section>
+
+      <!-- History Panel -->
+      <section class="history-panel">
+        <h2>Detection History</h2>
+        <div id="history-list" class="history-list">
+          <!-- Detected letters will appear here dynamically -->
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
